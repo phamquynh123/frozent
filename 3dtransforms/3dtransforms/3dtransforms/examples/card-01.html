@@ -1,0 +1,200 @@
+  
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+
+  <title>Card 1 &middot; Intro to CSS 3D transforms &rsaquo; Examples</title>
+
+  <link rel="stylesheet" href="../css/style.css" media="screen" />
+
+
+  <style media="screen">
+  .container {
+    width: 200px;
+    height: 260px;
+    position: relative;
+    margin: 0 auto 40px;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+  }
+
+  #card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #card.flipped {
+
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+  }
+
+  #card figure {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+
+  }
+  .anh1:hover{
+    opacity: 0;
+  }
+  .anh1:hover .anh2{
+    opacity: 1;
+  }
+
+</style>
+
+</head>
+<body>
+
+  <h1>Card 1</h1>
+
+  <section class="container">
+    <div id="card">
+      <figure class="front"><img width="200px" height="200px" src="https://www.ghiencaphe.com/wp-content/uploads/2011/05/coffee-cup1.jpg" alt="" class="anh1"></figure>
+      <figure class="back"><img width="200px" height="200px" src="http://hoiquanamthuc.com/wp-content/uploads/2015/10/ca-phe-hinh-trai-tim.jpg" alt="" class="anh2"></figure>
+    </div>
+  </section>
+
+
+
+  <script src="../js/utils.js"></script>
+  <script src="../js/flip-card.js"></script>
+</footer>
+
+
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  img{
+    position: absolute;
+    transition: opacity 2s ease-in-out;
+    -webkit-transition:opacity 2s ease-in-out;
+    width: 300px;
+    height:300px;
+  }
+  .anh2:hover{
+   opacity : 0;
+ }
+ .anh-product{
+  height:300px;
+  border: 1px solid;
+}
+.anh1{
+  width: 300px;
+  height:300px;
+  position: absolute;
+  transition: opacity 1.5s ease-in-out;
+  -webkit-transition:opacity 1.5s ease-in-out;
+}
+.anh2{
+  width: 300px;
+  height:300px;
+  position: absolute;
+  transition: opacity 1.5s ease-in-out;
+  -webkit-transition:opacity 1.5s ease-in-out;
+}
+.anh2:hover{
+  opacity : 0;
+}
+ul>li{
+  list-style: none;
+  padding: 5px 5px;
+  background-color: white;
+  margin:2px;
+
+}
+</style>
+</head>
+<body>
+  <div style="text-align: center;">
+    <img class="" src="../../../../img/1.jpg" width="200" height="200">
+    <img src="../../../../img/2.jpg" width="200" height="200">
+  </div>
+
+
+  <div class="anh-product">
+    <img class="anh1" src="../../../../img1/product3.jpg">
+    <div>
+      <img class="anh2" src="../../../../img1/product2.jpg">
+
+    </div>
+
+  </div>
+  <div class="anh-product">
+    <img class="anh1" src="../../../../img1/product3.jpg">
+    <div>
+      <img class="anh2" src="../../../../img1/product2.jpg">
+
+    </div>
+
+  </div>
+
+
+
+  
+
+  <div style="position: relative;">
+    <img src="../../../../img1/product5.jpg" style="position: absolute;">
+    <ul style="position: absolute; margin-left: 15%">
+     <li>1</li>
+     <li>2</li>
+     <li>3</li>
+     <li>4</li>
+   </ul>
+   <img src="../../../../img/2.jpg" width="200" height="200" class="anh2">
+ </div>
+
+ <!-- <div style="position: relative;" class="">
+  <img src="../../../../img1/product5.jpg" style="position: absolute;">
+  <ul style="position: absolute; margin-left: 15%">
+   <li>1</li>
+   <li>2</li>
+   <li>3</li>
+   <li>4</li>
+ </ul>
+ <img src="../../../../img/2.jpg" width="200" height="200" class="anh2">
+</div> -->
+
+
+
+
+
+
+
+
+
+</body>
+</html>

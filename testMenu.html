@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>testMenu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script type="text/javascript" src="../jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../Bootstrap/js/bootstrap.min.js"></script>
+
+
+	<script type="text/javascript" src="../jquery.mmenu/jquery.mmenu.all.js" ></script>
+	<link rel="stylesheet" type="text/css" href="../jquery.mmenu/jquery.mmenu.all.css">
+
+	<script type="text/javascript">
+         jQuery(document).ready(function() {
+            $("#menu").mmenu();
+         });
+     </script>
+</head>
+<body>
+	<!-- <div id="my-page">
+      <div id="my-header">
+      	<nav id="my-menu">
+		   <ul>
+		      <li><a href="/">Home</a></li>
+		      <li><a href="/about/">About us</a>
+		         <ul>
+		            <li><a href="/about/history/">History</a></li>
+		            <li><a href="/about/team/">The team</a></li>
+		            <li><a href="/about/address/">Our address</a></li>
+		         </ul>
+		      </li>
+		      <li><a href="/contact/">Contact</a></li>
+		   </ul>
+		</nav>
+
+      </div>
+      <div id="my-content"></div>
+      <div id="my-footer"></div>
+   </div> -->
+    <!-- The page -->
+      <div class="page">
+         <div class="header">
+            <a href="#menu"></a>
+            Demo
+         </div>
+         <div class="content">
+            <p><strong>This is a demo.</strong><br />
+               Click the menu icon to open the menu.</p>
+         </div>
+      </div>
+
+      <!-- The menu -->
+      <nav id="menu">
+         <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About us</a>
+               <ul>
+                  <li><a href="/about/history">History</a></li>
+                  <li><a href="/about/team">The team</a></li>
+                  <li><a href="/about/address">Our address</a></li>
+               </ul>
+            </li>
+            <li><a href="/contact">Contact</a></li>
+         </ul>
+      </nav>
+  <!--  <script type="text/javascript">
+   $(document).ready(function() {
+      $("#my-menu").mmenu({
+         // options
+      }, {
+         // configuration
+         offCanvas: {
+            pageNodetype: "section"
+         }
+      });
+   });
+</script> -->
+</body>
+</html>

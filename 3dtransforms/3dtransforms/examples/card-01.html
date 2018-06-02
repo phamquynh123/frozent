@@ -1,0 +1,166 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<!-- disable zooming -->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+
+	<title>Card 1 &middot; Intro to CSS 3D transforms &rsaquo; Examples</title>
+
+	<link rel="stylesheet" href="../css/style.css" media="screen" />
+
+
+	<style media="screen">
+	/* .container {
+		width: 200px;
+		height: 260px;
+		position: relative;
+		margin: 0 auto 40px;
+		-webkit-perspective: 800px;
+		-moz-perspective: 800px;
+		-o-perspective: 800px;
+		perspective: 800px;
+	}
+	
+	#card,#card1 {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		-webkit-transition: -webkit-transform 1s;
+		-moz-transition: -moz-transform 1s;
+		-o-transition: -o-transform 1s;
+		transition: transform 1s;
+		-webkit-transform-style: preserve-3d;
+		-moz-transform-style: preserve-3d;
+		-o-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+	}
+	
+	#card.flipped,#card1.flipped {
+		-webkit-transform: rotateY( 180deg );
+		-moz-transform: rotateY( 180deg );
+		-o-transform: rotateY( 180deg );
+		transform: rotateY( 180deg );
+	}
+	
+	#card figure, #card1 figure {
+		display: block;
+		height: 100%;
+		width: 100%;
+		line-height: 260px;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		font-size: 140px;
+		position: absolute;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+	}
+	
+	#card .front {
+		
+	}
+	
+	#card .back,#card1 .back {
+		-webkit-transform: rotateY( 180deg );
+		-moz-transform: rotateY( 180deg );
+		-o-transform: rotateY( 180deg );
+		transform: rotateY( 180deg );
+	} */
+.ovrly03 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+.ovrly03 img {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.ovrly03 .ovrlyT {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    left: -100%;
+    position: absolute;
+    top: -100%;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ovrly03 .ovrlyB {
+    background: rgba(0, 0, 0, 0.1);
+    height: 100%;
+    left: 100%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.ovrly03:hover .ovrlyT {
+    left: 0;
+    top: 0;
+}
+.ovrly03:hover .ovrlyB {
+    left: 0;
+    top: 0;
+}
+</style>
+
+</head>
+<body>
+
+		<div class="ovrly03">
+			<img src="http://2sao.vietnamnetjsc.vn/images/2017/07/31/14/47/dau-dua-cafe-tieu-mo-thua.jpg" alt="">
+			<div class="ovrlyT"></div>
+			<div class="ovrlyB"></div>
+		</div>
+	
+
+  <!-- <section class="container" style="float: left;">
+    <div id="card">
+      <figure class="front"><img width="200px" height="200px" src="https://www.ghiencaphe.com/wp-content/uploads/2011/05/coffee-cup1.jpg" alt=""></figure>
+      <figure class="back"><img width="200px" height="200px" src="http://hoiquanamthuc.com/wp-content/uploads/2015/10/ca-phe-hinh-trai-tim.jpg" alt=""></figure>
+    </div>
+  </section>
+    <section class="container">
+    <div id="card1">
+      <figure class="front"><img width="200px" height="200px" src="https://www.ghiencaphe.com/wp-content/uploads/2011/05/coffee-cup1.jpg" alt=""></figure>
+      <figure class="back"><img width="200px" height="200px" src="http://hoiquanamthuc.com/wp-content/uploads/2015/10/ca-phe-hinh-trai-tim.jpg" alt=""></figure>
+    </div>
+  </section>
+    <section class="container" style="float:left">
+    <div id="card">
+      <figure class="front"><img width="200px" height="200px" src="https://www.ghiencaphe.com/wp-content/uploads/2011/05/coffee-cup1.jpg" alt=""></figure>
+      <figure class="back"><img width="200px" height="200px" src="http://hoiquanamthuc.com/wp-content/uploads/2015/10/ca-phe-hinh-trai-tim.jpg" alt=""></figure>
+    </div>
+  </section>
+    <section class="container">
+    <div id="card">
+      <figure class="front"><img width="200px" height="200px" src="https://www.ghiencaphe.com/wp-content/uploads/2011/05/coffee-cup1.jpg" alt=""></figure>
+      <figure class="back"><img width="200px" height="200px" src="http://hoiquanamthuc.com/wp-content/uploads/2015/10/ca-phe-hinh-trai-tim.jpg" alt=""></figure>
+    </div>
+</section> -->
+
+
+
+<script src="../js/utils.js"></script>
+<script src="../js/flip-card.js"></script>
+</footer>
+
+
+</body>
+</html>

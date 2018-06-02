@@ -1,0 +1,85 @@
+
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<!-- disable zooming -->
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=0" />
+
+	<title>Card 1 &middot; Intro to CSS 3D transforms &rsaquo; Examples</title>
+
+	<link rel="stylesheet" href="../css/style.css" media="screen" />
+
+
+	<style media="screen">
+
+	.ovrly03 {
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+		-webkit-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+		-moz-box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+		box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.3);
+	}
+	.ovrly03 img {
+		position: relative;
+		width: 100%;
+		top: 0;
+		left: 0;
+	}
+	.ovrly03 .ovrlyT {
+		background: rgba(0, 0, 0, 0.1);
+		height: 100%;
+		left: -100%;
+		position: absolute;
+		top: -100%;
+		width: 100%;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.ovrly03 .ovrlyB {
+		background: rgba(0, 0, 0, 0.1);
+		height: 100%;
+		left: 100%;
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+		-o-transition: all 0.3s;
+		transition: all 0.3s;
+	}
+	.ovrly03:hover .ovrlyT {
+		left: 0;
+		top: 0;
+	}
+	.ovrly03:hover .ovrlyB {
+		left: 0;
+		top: 0;
+	}
+</style>
+
+</head>
+<body>
+
+	<div class="ovrly03">
+		<img src="http://2sao.vietnamnetjsc.vn/images/2017/07/31/14/47/dau-dua-cafe-tieu-mo-thua.jpg" alt="">
+		<div class="ovrlyT"></div>
+		<div class="ovrlyB"></div>
+	</div>
+	
+
+
+
+
+	<script src="../js/utils.js"></script>
+	<script src="../js/flip-card.js"></script>
+</footer>
+
+
+</body>
+</html>
